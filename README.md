@@ -4,16 +4,18 @@
 
 *hello.c* is a source file, which is a sequence of bits (each bit can have a value of 0 or 1) that is organised in 8-bit chunks called bytes. Each byte represents some text character in the program. The **ASCII** standard represents each character with a unique byte-sized integer value. The program is stored in a file as a sequence of bytes. Each byte has an integer value that corresponds to some character.
 
-+-------------+---------------------------------+-------------------+-------------------+
-| Source File | Character                       | ASCII Code        | Binary (8 bits)   |
-| Content     |                                 |                   |                   |
-+-------------+---------------------------------+-------------------+-------------------+
-| "Hi"        | 'H'                             | 72                | 01001000          |
-|             | 'i'                             | 105               | 01101001          |
-+-------------+---------------------------------+-------------------+-------------------+
+Let's take an example of a simple text file containing the word "Hi".
 
-Stored as Bytes:
-[ 01001000 ] [ 01101001 ]
+1. **Text to Encoding:**
+   - "H" in ASCII is 72.
+   - "i" in ASCII is 105.
+
+2. **Encoding to Binary:**
+   - 72 in binary is `01001000`.
+   - 105 in binary is `01101001`.
+
+3. **Stored as Bytes:**
+   - [ 01001000 ] [ 01101001 ]
 
 All information in a system - disk files, programs in memory, user data, data transferred across a network etc. - is represented as a bunch of bits.
 
