@@ -25,16 +25,16 @@ All information in a system - disk files, programs in memory, user data, data tr
 The compiler reads the source file *hello.c* and translates it into an executable object file *hello*. The *compilation system* is a collection of 4 phases: *preprocessor*, *compiler*, *assembler* and *linker*. 
 
 **Preprocessing phase**
-The preprocessor (cpp) modifies the original C program according to directives that begin with the *#* character. E.g. *#include<stdio.h>* tells the preprocessor to read the contents of the system header file *stdio.h* and insert it directly in the program text. The resulting C program typically ends with the *.i* suffix.
+- The preprocessor (cpp) modifies the original C program according to directives that begin with the *#* character. E.g. *#include<stdio.h>* tells the preprocessor to read the contents of the system header file *stdio.h* and insert it directly in the program text. The resulting C program typically ends with the *.i* suffix.
 
 **Compilation phase**
-The compiler (cc1) translates the text file *hello.i* into the text file *hello.s*, which contains an assembly-language program
+- The compiler (cc1) translates the text file *hello.i* into the text file *hello.s*, which contains an assembly-language program
 
 **Assembly phase**
-The assembler (as) translates *hello.s* into machine-language instructions, packages them in a form known as a relocatable object program, and stores the result in the object file *hello.o*. This file is a *binary file* containing bytes to encode the instructions for function *main*
+- The assembler (as) translates *hello.s* into machine-language instructions, packages them in a form known as a relocatable object program, and stores the result in the object file *hello.o*. This file is a *binary file* containing bytes to encode the instructions for function *main*
 
 **Linking phase**
-E.g. The *hello* program calls the *printf* function which is a part of the standard C library which resides in a seperate precompiled object file called *printf.o* which is merged with the *hello.o* program by the linker (ld). Thr result is the *hello* file, which is an executable object file that can be loaded into memory and executed
+- E.g. The *hello* program calls the *printf* function which is a part of the standard C library which resides in a seperate precompiled object file called *printf.o* which is merged with the *hello.o* program by the linker (ld). Thr result is the *hello* file, which is an executable object file that can be loaded into memory and executed
 
 
 ## 1.4 Processors Read and Interpret Instructions Stored in Memory
