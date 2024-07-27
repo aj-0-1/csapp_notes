@@ -57,7 +57,7 @@ The `hello` file can be executed with the command `./hello`. The shell loads the
    - **CPU** is the engine that interprets/executes instructions stored in **main memory**.
    - At it's core is a register (word-size storage device) called the *program counter* which at any point of time, points at some machine-language instruction in main memory
    - The processor executes the instruction and updates the PC to point at the next one
-   - Instruction = Simple operation , these simple operations revolve around the main memory, *register file* (small storage device with a collection of word-size registers), and *arithmetic/logic unit* (ALU - commputes new data and address values).
+   - Instruction = Simple operation , these simple operations revolve around the main memory, *register file* (small storage device with a collection of word-size registers), and *arithmetic/logic unit* (ALU - computes new data and address values).
    - Example operations: Load, Store, Operate, Jump etc.
   
 
