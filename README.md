@@ -63,4 +63,14 @@ The `hello` file can be executed with the command `./hello`. The shell loads the
 
 ### 1.5 Caches Matter
 
+- Disk drive might be 1000 times larger than the main memory but it might take the processor 10,000,000 times longer to read a work from disk than from memory
+- A processor can read data from the register file almost 100 times faster than from memory
+- Processor-Memory gap continues to increase := it is easier + cheaper to make processors run faster than to make main memory run faster
+- Caches help deal with this
+- Storage at one level serves as a cache for storage at the next lower level in the memory hierachy
 
+
+### The OS Manages the Hardware
+
+- The OS is like a layer of software that connects application programs with hardware (processor, main memory, I/O devices)
+- Provides abstractions: Processes, Virtual Memory and Files
